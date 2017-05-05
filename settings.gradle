@@ -1,0 +1,3 @@
+include ':app', ':quiet'
+project(':quiet').projectDir = new File('../../quiet/android/quiet')
+
