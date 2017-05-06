@@ -58,11 +58,7 @@ public class MainActivity extends AppCompatActivity {
             if (gpio == null) {
                 return;
             } try {
-                if(gpio.getValue()) {
                     gpio.setValue(!gpio.getValue());
-                } else {
-                    gpio.setValue(!gpio.getValue());
-                }
             } catch (IOException ioe) {
                 Log.e(TAG, "Error on Peripheral IO API", ioe);
             }
